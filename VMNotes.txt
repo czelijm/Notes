@@ -1,0 +1,11 @@
+To disable Hyper-V from starting the following command can be used:
+
+bcdedit /set hypervisorlaunchtype off
+
+A reboot of Windows 10 is necessary. After the reboot I was able to boot the Windows 10 VM.
+
+To enable the Hyper-V role again use the following command:
+
+bcdedit /set hypervisorlaunchtype auto
+
+A reboot of of the Windows 10 is necessary.
